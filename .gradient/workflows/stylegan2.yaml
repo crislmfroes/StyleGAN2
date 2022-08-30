@@ -13,7 +13,7 @@ jobs:
     uses: git-checkout@v1
     with:
       url: https://github.com/gradient-ai/stylegan2.git
-      url: context.event.github.url
+      # url: context.event.github.url
       ref: context.event.github.ref
   StyleGan2:
     resources:
