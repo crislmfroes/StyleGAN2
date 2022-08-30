@@ -17,7 +17,7 @@ jobs:
       ref: context.event.github.ref
   StyleGan2:
     resources:
-      instance-type: Free-GPU
+      instance-type: Free-CPU
     needs:
       - CloneRepo
     inputs:
