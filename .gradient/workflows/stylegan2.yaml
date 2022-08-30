@@ -6,7 +6,7 @@ on:
 jobs:
   CloneRepo:
     resources:
-      instance-type: Free-CPU
+      instance-type: FreeCPU
     outputs:
      stylegan2:
         type: volume
@@ -17,7 +17,7 @@ jobs:
       ref: context.event.github.ref
   StyleGan2:
     resources:
-      instance-type: Free-CPU
+      instance-type: FreeCPU
     needs:
       - CloneRepo
     inputs:
